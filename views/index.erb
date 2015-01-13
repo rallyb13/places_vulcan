@@ -1,0 +1,17 @@
+<h1>Oh, the Places You've Been!</h1>
+
+</br>
+<form action="/map" method="post">
+  <label for="destination">Where have you <em>been</em>?</label>
+  <input id="destination" name="destination" type="text">
+  <button type="submit">Go places!</button>
+</form>
+
+</br>
+</br>
+<p>Places:</p>
+<ul>
+  <% @places.each() do |place| %>
+    <li><%= place.add() %></li>
+  <% end %>
+</ul>
